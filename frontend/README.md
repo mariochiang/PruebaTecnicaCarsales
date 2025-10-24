@@ -45,6 +45,19 @@ El **BFF** actúa como intermediario entre el frontend y la API pública
 
 ---
 
+## Entorno de desarrollo
+
+El repositorio contiene **dos partes principales**, que deben ejecutarse en entornos distintos:
+
+| Componente | Carpeta | Entorno recomendado | Descripción |
+|-------------|----------|--------------------|--------------|
+| **Backend (BFF)** | `Carsales.Bff.Api` | Visual Studio 2022 | Proyecto .NET 8 (API REST). Se ejecuta con `dotnet run` o desde Visual Studio. |
+| **Frontend (Angular)** | `frontend` | Visual Studio Code | Aplicación Angular 20, ejecutable con `npm start` o `ng serve --open`. |
+
+Esto permite mantener la separación clara entre la lógica del backend (API) y la vista del frontend (Angular), siguiendo el patrón **BFF – Backend for Frontend**.
+
+---
+
 ## Ejecución del proyecto
 
 ### 1. Requisitos previos
